@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Nav-magic";
+    src: url("../assets/fonts/Moonrising.otf");
+}
+
+
+
+/* Selector Universal - Margenes y Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    html {
+        background-color: black;
+    }
+
+/* NAVBAR */
+
+.navbar-brand {
+    color: white;
+    font-family: "Nav-magic";
+    font-size: 25px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14rem;
+}
+
+.navbar-nav .nav-item .nav-link{
+    
+    color: white;
+}
+
+.carousel{
+    width: 70%;
+    position: absolute;
+    margin-top: 2rem;
+    left: 15%;
+}
