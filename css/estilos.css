@@ -11,8 +11,8 @@
     padding: 0;
     box-sizing: border-box; }
 
-    html {
-        background-color: black;
+    header {
+        background: linear-gradient(to bottom, #16222A, #3A6073) ;
     }
 
 /* NAVBAR */
@@ -36,8 +36,17 @@
 }
 
 .carousel{
-    width: 70%;
-    position: absolute;
-    margin-top: 2rem;
-    left: 15%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.button-magic {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 12rem;
+
+}
+
+main {
+    background-color: black;
 }
