@@ -1,52 +1,224 @@
 @font-face {
-    font-family: "Nav-magic";
+    font-family: "nav-magic";
     src: url("../assets/fonts/Moonrising.otf");
 }
-
-
+@font-face {
+    font-family: "links-magic";
+    src: url("../assets/fonts/LEMONMILK-Regular.otf");
+}
 
 /* Selector Universal - Margenes y Padding */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;}
 
-    header {
-        background: linear-gradient(to bottom, #16222A, #3A6073) ;
+    body {
+        background: radial-gradient(#2C2F42,#161824);
+        height: 100vh;
     }
 
 /* NAVBAR */
 
-.navbar-brand {
-    color: white;
-    font-family: "Nav-magic";
-    font-size: 25px;
+
+#nav-cinema {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.collapse {
+.h2-cinema{
+    font-family: "nav-magic";
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.links-cinema  {
+    display: flex;
+    list-style: none;
+    margin-top: 16px;
+    margin-right: 12rem;
+    position: absolute;
+    right: 33rem;
+    font-family: "links-magic";
+    letter-spacing: 1px;
+}
+
+.links-cinema li a {
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    text-decoration: none;
+}
+
+.links-cinema li a:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 3px;
+}
+
+.nav-micuenta {
+    width: 40%;
+    position: absolute;
+    left: 63rem;
+}
+
+.fa-regular {
+    margin-right: 13px;
+}
+
+.btn-cinema {
+    font-size: 25px;
+    color: white;
+    margin: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: none;  
+}
+
+
+
+/* PAGE MI CUENTA */
+
+#form-cinema {
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 200px;
+    border: solid white;
+    border-radius: 1px;
+    color: white;
+}
+
+#form-cinema h3{
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-family: "nav-magic";
+    margin-left: 100px;
+    letter-spacing: 2px;
+}
+
+.form-magic label {
+    font-size: 16px;
+    margin-left: 10px;   
+    font-family: "links-magic"; 
+}
+
+.controls {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: solid ;
+    border-radius: 2px;
+}
+
+.condition {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+.btn-magic {
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+    font-family: "links-magic";
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    /* QUERYS NAVBAR */
+
+    .h2-cinema{
+        font-size: 22px;
+    }
+    
+    .links-cinema  {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        right: 1rem;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        z-index: 500;
+
+        height: calc(50% - 40px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .links-cinema li {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .nav-micuenta {
+        top: 12rem;
+        left: 11.8rem;
+    }
+    
+    .btn-cinema {
+        font-size: 29px;
+        margin: 2px 30px;
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* CARRUSEL */
+
+/* .slider-cinema {
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor-slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 14rem;
 }
 
-.navbar-nav .nav-item .nav-link{
-    
+.slider-cinema .slider-flechas {
+    font-size: 20px;
     color: white;
-}
-
-.carousel{
-    width: 80%;
-    margin-left: 10%;
-}
-
-.button-magic {
-    display: flex;
-    margin-top: 10px;
-    margin-left: 12rem;
-
-}
-
-main {
-    background-color: black;
-}
+} */

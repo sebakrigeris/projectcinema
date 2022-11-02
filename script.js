@@ -5,7 +5,7 @@ alert("Por favor, en caso de no contar con un usuario y contraseña, crear una c
 
 function usuarioYContrasena(usuario, contrasena, email){
     this.usuario = usuario;
-    this.contraseña = contrasena
+    this.contraseña = contrasena;
     this.email = email;
 }
 
